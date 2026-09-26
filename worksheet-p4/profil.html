@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game yang Pernah Saya Mainkan</title>
+  <!-- urutan: token -> dasar -> tata letak -> komponen -> tema -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="tema" class="pengalih-tema">
+    <label for="tema" class="tombol-tema">Tema gelap</label>
+
+    <div class="header-baris">
+      <h1>Game yang Pernah Saya Mainkan</h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#daftar-game">Daftar Game</a></li>
+          <li><a href="#tambah-game">Tambah Game</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p>Catatan game yang sudah saya mainkan beserta penilaian pribadi saya.</p>
+  </header>
+
+  <main>
+    <section id="daftar-game">
+      <h2>Daftar Game</h2>
+
+      <table>
+        <caption>Game yang pernah saya mainkan dan rating saya (skala 1–10)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul game</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Rating saya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Minecraft</th>
+            <td>Sandbox</td>
+            <td>PC</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <th scope="row">Stardew Valley</th>
+            <td>Simulasi bertani</td>
+            <td>PC</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th scope="row">Mobile Legends</th>
+            <td>MOBA</td>
+            <td>Ponsel</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Kartu game</h3>
+      <div class="katalog">
+        <div class="kartu">
+          <p><strong>Minecraft</strong></p>
+          <p>Sandbox, PC</p>
+          <p>Rating: 9/10</p>
+        </div>
+        <div class="kartu">
+          <p><strong>Stardew Valley</strong></p>
+          <p>Simulasi bertani, PC</p>
+          <p>Rating: 8/10</p>
+        </div>
+        <div class="kartu">
+          <p><strong>Mobile Legends</strong></p>
+          <p>MOBA, Ponsel</p>
+          <p>Rating: 7/10</p>
+        </div>
+      </div>
+
+      <figure>
+        <img src="game-favorit.webp"
+             alt="Ilustrasi stik game abu-abu dengan tombol arah hitam dan empat tombol berwarna merah, biru, hijau, dan kuning di atas latar biru tua"
+             width="640" height="360" loading="lazy">
+        <figcaption>Stik game, teman setia saya saat bermain.</figcaption>
+      </figure>
+    </section>
+
+    <section id="tambah-game">
+      <h2>Tambah Game</h2>
+      <p>Catat game baru yang sudah selesai dimainkan.</p>
+
+      <form action="/simpan" method="post">
+        <div class="form-kolom">
+          <label for="judul-game">Judul game</label>
+          <input type="text" id="judul-game" name="judul-game"
+                 required minlength="2" maxlength="60">
+          <small class="pesan-galat">Judul minimal 2 huruf.</small>
+        </div>
+        <div class="form-kolom">
+          <label for="tanggal-selesai">Tanggal selesai dimainkan</label>
+          <input type="date" id="tanggal-selesai" name="tanggal-selesai" required>
+          <small class="pesan-galat">Tanggal harus diisi.</small>
+        </div>
+        <div class="form-kolom">
+          <label for="rating">Rating saya (1–10)</label>
+          <input type="number" id="rating" name="rating"
+                 required min="1" max="10">
+          <small class="pesan-galat">Rating harus 1 sampai 10.</small>
+        </div>
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <p>Afwan Aditya Saputra · 25523105 · <time datetime="2026">2026</time></p>
+  </footer>
+</body>
+</html>
