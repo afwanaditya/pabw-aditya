@@ -59,6 +59,23 @@ Yang saya pakai:
 - Kartu Minecraft saya bikin lebih lebar (span 2) soalnya game favorit
 - Di hp sidebar-nya pindah ke atas biar nggak kepotong
 
+## Pertemuan 6 — Responsif mobile-first
+
+Halaman dari Pertemuan 5 disalin ke worksheet-p6/, terus ditambah satu berkas
+baru: responsif.css. Isinya gaya dasar buat layar hp dulu, baru ditambah
+dua titik henti buat tablet sama desktop.
+
+- Dasar (semua lebar): isi sama galeri satu kolom
+- 48rem: galeri jadi 2 kolom
+- 60rem: sidebar pindah ke samping konten, galeri jadi 3 kolom
+- Tabel dibungkus .table-wrap biar bisa digulir sendiri kalau kesempitan
+- Media query max-width dari Pertemuan 5 saya hapus, diganti min-width
+
+Catatan: di worksheet nama class-nya .content sama .grid, di halaman saya
+namanya .isi sama .galeri (udah dipakai dari Pertemuan 5).
+
+Screenshot uji: screenshot-360.png, screenshot-768.png, screenshot-1280.png
+
 ## Catatan penggunaan AI
 
 saya menggunakan AI untuk brainstorming ide topik tapi profil.html dll saya kerjakan sendiri.
