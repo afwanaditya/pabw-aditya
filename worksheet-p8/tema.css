@@ -1,0 +1,25 @@
+.pengalih-tema { position: absolute; opacity: 0; pointer-events: none; }
+
+/* ikut pengaturan sistem */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--dark-bg);
+    --color-fg: var(--dark-fg);
+    --color-surface: var(--dark-surface);
+    --color-border: var(--dark-border);
+    --color-primary: var(--violet-300);
+    --color-danger: var(--dark-danger);
+    --color-focus: var(--dark-focus);
+  }
+}
+
+/* pilihan manual, harus di bawah media query biar menang */
+:root:has(#tema:checked) {
+  --color-bg: var(--dark-bg);
+  --color-fg: var(--dark-fg);
+  --color-surface: var(--dark-surface);
+  --color-border: var(--dark-border);
+  --color-primary: var(--violet-300);
+  --color-danger: var(--dark-danger);
+  --color-focus: var(--dark-focus);
+}
