@@ -76,6 +76,25 @@ namanya .isi sama .galeri (udah dipakai dari Pertemuan 5).
 
 Screenshot uji: screenshot-360.png, screenshot-768.png, screenshot-1280.png
 
+## Pertemuan 8 — JavaScript, data, dan array methods
+
+Halaman dari Pertemuan 6 disalin ke worksheet-p8/, terus ditambah js/app.js.
+Isi data profil sekarang disimpan di JavaScript, bukan diketik di HTML.
+
+- Data profil (nama, peran, keahlian) disimpan di objek profil
+- Daftar proyek disimpan sebagai array of object (daftarProyek)
+- Dua fungsi murni: buatPerkenalan dan formatKeahlian
+- Array methods: filter (proyek yang selesai), find (satu proyek),
+  map (judul proyek), sort pada salinan
+- Tiga galat dicoba dan diperbaiki: label salah tulis (undefined),
+  querySelector null, dan nilai input yang masih teks
+- Screenshot Console: console-galat.png, console-diperbaiki.png, console-tabel.png
+
+### Deklarasi AI
+Kode app.js disusun sdikit pakai AI. Isi data (keahlian dan daftar
+proyek) saya tentukan sendiri, dan pengujian di Console, perbaikan galat,
+serta screenshot saya kerjakan sendiri.
+
 ## Catatan penggunaan AI
 
 saya menggunakan AI untuk brainstorming ide topik tapi profil.html dll saya kerjakan sendiri.
