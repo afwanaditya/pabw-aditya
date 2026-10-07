@@ -32,6 +32,7 @@ console.log(buatPerkenalan(profil));
 console.log(formatKeahlian(profil.keahlian));
 
 
+
 console.log(buatPerkenalan({ nama: "Budi", peran: "Mahasiswa Desain" }));
 console.log(formatKeahlian(["HTML", "CSS"]));
 
@@ -61,3 +62,8 @@ console.log(daftarJudul);
 const urut = [...daftarProyek].sort((a, b) => a.judul.localeCompare(b.judul));
 console.table(urut);
 console.table(daftarProyek);
+
+console.log(document.querySelector("h1").textContent);
+console.log(profil.nama);
+const nilaiInput = "8";
+console.log(Number(nilaiInput) + 1);
