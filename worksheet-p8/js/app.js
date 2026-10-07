@@ -34,3 +34,30 @@ console.log(formatKeahlian(profil.keahlian));
 
 console.log(buatPerkenalan({ nama: "Budi", peran: "Mahasiswa Desain" }));
 console.log(formatKeahlian(["HTML", "CSS"]));
+
+// daftar proyek sebagai array of object
+const daftarProyek = [
+  { judul: "GrinCare", tahun: 2026, selesai: true },
+  { judul: "RespiraTB", tahun: 2026, selesai: true },
+  { judul: "FINATRA NEXUS", tahun: 2026, selesai: false },
+];
+
+console.table(profil.keahlian);
+console.table(daftarProyek);
+
+// filter proyek yang sudah selesai aja
+const proyekSelesai = daftarProyek.filter((proyek) => proyek.selesai);
+console.table(proyekSelesai);
+
+// find: ambil satu proyek berdasarkan judul
+const finatra = daftarProyek.find((proyek) => proyek.judul === "FINATRA NEXUS");
+console.log(finatra);
+
+// map: ini ambil judulnya aja
+const daftarJudul = daftarProyek.map((proyek) => proyek.judul);
+console.log(daftarJudul);
+
+// sort pada salinan, data asli tidak berubah samsek
+const urut = [...daftarProyek].sort((a, b) => a.judul.localeCompare(b.judul));
+console.table(urut);
+console.table(daftarProyek);
