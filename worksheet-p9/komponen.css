@@ -121,3 +121,17 @@ th, td {
 }
 
 .pengalih-tema:focus-visible + .tombol-tema { outline: 2px solid var(--color-focus); }
+
+/* tanda tombol filter yang sedang dipilih */
+.aktif {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* kolom yang ditandai salah oleh JavaScript */
+input[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  border-width: 2px;
+}
+
+.form-kolom:has(input[aria-invalid="true"]) .pesan-galat { display: block; }
